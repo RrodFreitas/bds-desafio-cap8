@@ -1,9 +1,11 @@
+import Navbar from "components/Navbar";
 import GithubSearch from "pages/ApiSearchGithub";
 import Home from "pages/Home";
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 
 const Routes = () => (
     <BrowserRouter>
+        <Navbar/>
         <Switch>
             <Route path="/" exact>
                 <Home/>

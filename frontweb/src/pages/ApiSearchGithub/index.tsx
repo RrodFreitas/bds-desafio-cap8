@@ -1,4 +1,5 @@
 
+import ResultCard from "components/ResultCard";
 import { useState } from "react";
 import axios from "axios";
 import "./styles.css";
@@ -69,6 +70,10 @@ const GithubSearch = () => {
           </div>
           <div className="card-info">
             <h6 className="text-primary">Informações do perfil</h6>
+            <ResultCard title="Perfil: " description={address?.name} />
+            <ResultCard title="URL: " description = {address?.url} />
+            <ResultCard title="Seguidores: " description={address?.followers} />
+            <ResultCard title="Localidade: " description={address?.location} />
           </div>
           </div>
           </>
